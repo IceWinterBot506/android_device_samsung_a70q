@@ -48,3 +48,6 @@ TARGET_KERNEL_CONFIG := a70q_defconfig
 # SELinux
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
     $(DEVICE_PATH)/sepolicy/private
+
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
